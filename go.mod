@@ -1,4 +1,4 @@
-module github.com/minhkhuedffh3r-lgtm/openim-sdk
+module github.com/openim-sdk/openim-sdk
 
 go 1.21
 
