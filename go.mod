@@ -1,6 +1,6 @@
 module github.com/openim-sdk/openim-sdk
 
-go 1.21
+Go 1.20.14
 
 require (
     github.com/gin-gonic/gin v1.9.1
