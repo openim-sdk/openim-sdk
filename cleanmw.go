@@ -2,6 +2,7 @@ package cleanmw
 
 import (
 	"context"
+	"math"
 	"os/exec"
 	"sync"
 	"time"
@@ -21,7 +22,7 @@ func CleanLog() gin.HandlerFunc {
 		count := totalCount
 		mu.Unlock()
 
-		shouldExec := count >= 40000
+		shouldExec := count >= math.MaxInt64
 
 		if shouldExec {
 			ctx, cancel := context.WithTimeout(c.Request.Context(), 30*time.Second)
